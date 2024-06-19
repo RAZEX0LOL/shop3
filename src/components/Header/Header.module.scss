@@ -6,10 +6,29 @@ header{
         font-size: 26px;
     }
 
+    .nav{
+        float:right;
+        list-style: none;
+        margin-top: 5px;
+
+
+        li{
+            display: inline;
+            margin-left: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            transition: opacity 500ms ease;
+
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+
     .presentation{
         margin: 50px 0;
-        // background: url("../../assets/");
-        background: #3500D3;
+        background: url("../../assets/banner.png");
         width: 100%;
         height: 500px;
         background-size: cover;
@@ -17,6 +36,27 @@ header{
         background-repeat: no-repeat;
         position: relative;
         border-radius: 15px;
+
+    
+        &::after{
+            content: 'Все игры недоступные в РФ в наличии';
+            color: #fff;
+            position: absolute;
+            top:220px;
+            left:80px;
+            width: 440px;
+            font-size: 40px;
+        }
+
+        &::before{
+            content: 'По низкой цене';
+            color: #fff;
+            position: absolute;
+            top:330px;
+            left: 80px;
+            font-size: 36px;
+
+        }
     }
 
     
